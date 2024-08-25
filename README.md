@@ -1,0 +1,1 @@
+A basic social media website created using HTML, Tailwind CSS and Express Mongodb and EJS templates for dynamic data. This is a self learning project in my MERN stack journey. Stay tuned for further new amazing project and features.
