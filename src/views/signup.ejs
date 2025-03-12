@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body class="h-screen bg-gray-200 flex items-center justify-center">
+    <div class="w-2/3 max-w-md p-8 bg-white rounded-lg shadow-lg">
+        <h1 class="text-gray-800 text-2xl font-bold mb-6 text-center">Register</h1>
+        <form action="/api/v1/users/register" method="post" enctype="multipart/form-data">
+            <div class="mb-4">
+                <label for="fullName" class="block text-gray-700 font-semibold mb-2">Full Name</label>
+                <input 
+                    class="w-full border-2 border-gray-300 px-3 py-2 rounded shadow-sm focus:outline-none focus:border-green-400"
+                    type="text" 
+                    id="fullName" 
+                    name="fullName" 
+                    required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                <input 
+                    class="w-full border-2 border-gray-300 px-3 py-2 rounded shadow-sm focus:outline-none focus:border-green-400"
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required>
+            </div>
+            <div class="mb-4">
+                <label for="username" class="block text-gray-700 font-semibold mb-2">Username</label>
+                <input 
+                    class="w-full border-2 border-gray-300 px-3 py-2 rounded shadow-sm focus:outline-none focus:border-green-400"
+                    type="text" 
+                    id="username" 
+                    name="username" 
+                    required>
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block text-gray-700 font-semibold mb-2">Password</label>
+                <input 
+                    class="w-full border-2 border-gray-300 px-3 py-2 rounded shadow-sm focus:outline-none focus:border-green-400"
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    required>
+            </div>
+            <div class="mb-4">
+                <label for="avatar" class="block text-gray-700 font-semibold mb-2">Avatar</label>
+                <input 
+                    class="w-full border-2 border-gray-300 px-3 py-2 rounded shadow-sm focus:outline-none focus:border-green-400"
+                    type="file" 
+                    id="avatar" 
+                    name="avatar" 
+                    accept="image/*" 
+                    required>
+            </div>
+            <div class="mb-4">
+                <label for="coverImage" class="block text-gray-700 font-semibold mb-2">Cover Image</label>
+                <input 
+                    class="w-full border-2 border-gray-300 px-3 py-2 rounded shadow-sm focus:outline-none focus:border-green-400"
+                    type="file" 
+                    id="coverImage" 
+                    name="coverImage" 
+                    accept="image/*">
+            </div>
+            <div class="flex items-center justify-center mt-6">
+                <button 
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    type="submit">
+                    Register
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+we use all these utils to make our work easy
+
+************
+Async Handler to handle asynchronous function. Async function is passed into asyncHandler and if catched error then handle using ApiError and if works correctly then executed and we make a standard response file to send response. 
+
+
+***********
